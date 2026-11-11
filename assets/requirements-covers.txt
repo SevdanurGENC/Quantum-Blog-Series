@@ -1,0 +1,4 @@
+-r ../requirements.txt
+pycairo>=1.25
+pillow>=10.0
+scikit-image>=0.22
