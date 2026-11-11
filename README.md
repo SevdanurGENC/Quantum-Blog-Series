@@ -17,12 +17,18 @@
 | 08 | <img src="assets/covers/08-qml-encoding-en.gif" width="260"> | Kuantum ML: Veriyi Kübitlere Yazmak | Quantum ML: Writing Data into Qubits | [`08-qml-encoding`](08-qml-encoding) |
 | 09 | <img src="assets/covers/09-variational-classifier-en.gif" width="260"> | Öğrenen Bir Kuantum Devresi | A Quantum Circuit That Learns | [`09-variational-classifier`](09-variational-classifier) |
 | 10 | <img src="assets/covers/10-quantum-kernels-en.gif" width="260"> | Kuantum Çekirdekleri: Verinin Gizli Boyutları | Quantum Kernels: The Hidden Dimensions of Data | [`10-quantum-kernels`](10-quantum-kernels) |
+| 11 | <img src="assets/covers/11-qml-digits-en.gif" width="260"> | Kuantum Bilgisayar El Yazısı Okuyabilir mi? | Can a Quantum Computer Read Handwriting? | [`11-qml-digits`](11-qml-digits) |
+| 12 | <img src="assets/covers/12-barren-plateaus-en.gif" width="260"> | Çorak Platolar: Kuantum ML'in Gizli Düşmanı | Barren Plateaus: Quantum ML's Hidden Enemy | [`12-barren-plateaus`](12-barren-plateaus) |
+| 13 | <img src="assets/covers/13-qaoa-maxcut-en.gif" width="260"> | QAOA ile Kuantum Optimizasyon | Quantum Optimisation with QAOA | [`13-qaoa-maxcut`](13-qaoa-maxcut) |
+| 14 | <img src="assets/covers/14-qaoa-landscape-en.gif" width="260"> | QAOA'nın Enerji Manzarası | The QAOA Energy Landscape | [`14-qaoa-landscape`](14-qaoa-landscape) |
+| 15 | <img src="assets/covers/15-qaoa-portfolio-en.gif" width="260"> | QAOA ile Portföy Optimizasyonu | Portfolio Optimisation with QAOA | [`15-qaoa-portfolio`](15-qaoa-portfolio) |
+| 16 | <img src="assets/covers/16-vqe-h2-en.gif" width="260"> | Kuantum Kimya: VQE ile H₂ Molekülü | Quantum Chemistry: The H₂ Molecule with VQE | [`16-vqe-h2`](16-vqe-h2) |
 
 ## Kurulum / Setup
 
 ```bash
-git clone https://github.com/<kullanici-adi>/QBlog.git
-cd QBlog
+git clone https://github.com/SevdanurGENC/Quantum-Blog-Series.git
+cd Quantum-Blog-Series
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -34,14 +40,14 @@ cd 06-grover
 python grover_search.py
 ```
 
-🇹🇷 Python 3.10+ önerilir. #01–#07 Qiskit, #08–#10 PennyLane kullanır. Hepsi dizüstü bilgisayarda saniyeler içinde çalışır (en uzunu #09, ~10 sn).
-🇬🇧 Python 3.10+ recommended. #01–#07 use Qiskit, #08–#10 use PennyLane. Everything runs on a laptop in seconds (the longest, #09, takes ~10 s).
+🇹🇷 Python 3.10+ önerilir. #01–#07 Qiskit, #08–#16 PennyLane kullanır. Hepsi dizüstü bilgisayarda en fazla bir iki dakikada çalışır.
+🇬🇧 Python 3.10+ recommended. #01–#07 use Qiskit, #08–#16 use PennyLane. Everything runs on a laptop within a minute or two.
 
 ## Klasör yapısı / Layout
 
 ```
 QBlog/
-├── 01-qubit/ … 10-quantum-kernels/   # her yazının kodu / code for each post
+├── 01-qubit/ … 16-vqe-h2/           # her yazının kodu / code for each post
 ├── assets/
 │   ├── covers/          # TR + EN kapak GIF'leri ve statik PNG'ler / cover GIFs + static PNGs
 │   ├── covers_meta.py   # kapak başlıkları / cover titles

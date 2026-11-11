@@ -916,6 +916,10 @@ def render(post, lang):
 
 
 if __name__ == "__main__":
+    from scenes_extra import HERO_EXTRA, SCENES_EXTRA   # #11–#16
+
+    SCENES.update(SCENES_EXTRA)
+    HERO.update(HERO_EXTRA)
     OUTDIR.mkdir(exist_ok=True)
     want = {int(a) for a in sys.argv[1:]} or set(SCENES)
     for post in POSTS:
